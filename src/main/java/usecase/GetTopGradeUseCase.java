@@ -23,6 +23,7 @@ public final class GetTopGradeUseCase {
         // Call the API to get the usernames of all your team members
         float max = 0;
         final Team team = gradeDataBase.getMyTeam();
+        System.out.println(team.getMembers());
         // Call the API to get all the grades for the course for all your team members
         for (String username : team.getMembers()) {
             // Call the API to get the grade for the course for the username
